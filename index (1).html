@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nort Network - Validator & Nodes Service</title>
     <style>
-        /* Pengaturan Dasar - Tema Biru Muda & Tulisan Hitam */
+        /* Base Setup - Light Blue Background & Black Text */
         * {
             margin: 0;
             padding: 0;
@@ -14,14 +14,14 @@
         }
 
         body {
-            background-color: #e0f2fe; /* Warna latar biru muda yang sejuk */
-            color: #111827; /* Warna tulisan hitam pekat/gelap */
+            background-color: #e0f2fe; /* Light blue background */
+            color: #111827; /* Dark black text */
             line-height: 1.6;
         }
 
-        /* Navigasi / Header */
+        /* Navigation Header */
         header {
-            background-color: #bae6fd; /* Biru muda sedikit lebih kontras */
+            background-color: #bae6fd; /* Slightly darker light blue for contrast */
             padding: 20px 5%;
             display: flex;
             justify-content: space-between;
@@ -47,17 +47,18 @@
             text-decoration: underline;
         }
 
-        /* Bagian Utama (Hero Section) */
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
             max-width: 800px;
             margin: 0 auto;
         }
 
         .hero h1 {
             font-size: 42px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-weight: 800;
         }
 
         .hero p {
@@ -66,7 +67,42 @@
             color: #374151;
         }
 
-        /* Bagian Fitur / Layanan (Nodes & Validator) */
+        /* Call To Action Buttons (New Additions) */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: #111827;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1f2937;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #111827;
+            border: 2px solid #111827;
+        }
+
+        .btn-secondary:hover {
+            background-color: #bae6fd;
+        }
+
+        /* Services & Grid Layout */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -76,8 +112,9 @@
         .section-title {
             text-align: center;
             font-size: 28px;
+            margin-top: 40px;
             margin-bottom: 30px;
-            position: relative;
+            font-weight: 700;
         }
 
         .grid {
@@ -88,7 +125,7 @@
         }
 
         .card {
-            background-color: #f0f9ff; /* Kontak box biru sangat muda */
+            background-color: #f0f9ff; /* Extra light box blue */
             border: 2px solid #7dd3fc;
             border-radius: 8px;
             padding: 25px;
@@ -117,13 +154,32 @@
             margin-bottom: 8px;
         }
 
+        /* Social Media Links (New Additions) */
+        .social-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #111827;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
         /* Footer */
         footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             background-color: #bae6fd;
             border-top: 2px solid #93c5fd;
-            margin-top: 40px;
+            margin-top: 60px;
             font-size: 14px;
             font-weight: 500;
         }
@@ -131,86 +187,97 @@
 </head>
 <body>
 
-    <!-- Header & Navigasi -->
+    <!-- Header Navigation -->
     <header>
         <div class="logo">Nort Network</div>
         <nav>
-            <a href="#services">Layanan</a>
-            <a href="#stats">Statistik</a>
-            <a href="#contact">Kontak</a>
+            <a href="#services">Services</a>
+            <a href="#stats">Network Stats</a>
+            <a href="#footer">Contact</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Infrastruktur Node & Validator Terpercaya</h1>
-        <p>Nort Network menyediakan layanan validator independen yang aman, berkinerja tinggi, dan terdesentralisasi untuk mendukung keamanan berbagai jaringan blockchain.</p>
+        <h1>Trusted Node & Validator Infrastructure</h1>
+        <p>Nort Network provides secure, high-performance, and decentralized independent validator services to protect and support various blockchain networks.</p>
+        <div class="cta-buttons">
+            <a href="#services" class="btn btn-primary">Stake With Us</a>
+            <a href="#services" class="btn btn-secondary">Explore RPC</a>
+        </div>
     </section>
 
-    <!-- Konten Utama -->
+    <!-- Main Content -->
     <div class="container" id="services">
-        <h2 class="section-title">Layanan Kami</h2>
+        <h2 class="section-title">Our Services</h2>
         
         <div class="grid">
-            <!-- Kartu 1: Validator -->
+            <!-- Card 1: Validator -->
             <div class="card">
                 <h3>🛡️ Professional Validator</h3>
-                <p>Ikut serta dalam mengamankan jaringan PoS (Proof of Stake) dengan infrastruktur kelas perusahaan.</p>
+                <p>Securing Proof of Stake (PoS) networks utilizing enterprise-grade infrastructure.</p>
                 <ul>
-                    <li>Uptime server 99.9%</li>
-                    <li>Sistem proteksi dari slashing</li>
-                    <li>Komisi staking yang kompetitif</li>
+                    <li>99.9% Server Uptime</li>
+                    <li>Slashing Protection Systems</li>
+                    <li>Competitive Staking Commissions</li>
                 </ul>
             </div>
 
-            <!-- Kartu 2: Node Provider -->
+            <!-- Card 2: Node Provider -->
             <div class="card">
-                <h3>⚙️ RPC & RPC Nodes</h3>
-                <p>Menyediakan endpoint node yang cepat dan stabil untuk kebutuhan developer dan komunitas crypto.</p>
+                <h3>⚙️ RPC Nodes</h3>
+                <p>Providing fast and stable RPC endpoints tailored for developers and crypto communities.</p>
                 <ul>
-                    <li>Akses API super cepat</li>
-                    <li>Mendukung Testnet & Mainnet</li>
-                    <li>Sinkronisasi data real-time</li>
+                    <li>Ultra-fast API Access</li>
+                    <li>Mainnet & Testnet Support</li>
+                    <li>Real-time Data Synchronization</li>
                 </ul>
             </div>
 
-            <!-- Kartu 3: Spesifikasi Server -->
+            <!-- Card 3: Server Specs -->
             <div class="card">
-                <h3>🖥️ Spesifikasi Node</h3>
-                <p>Kami menggunakan perangkat keras berspesifikasi tinggi demi menjaga performa jaringan tetap optimal.</p>
+                <h3>🖥️ Node Specifications</h3>
+                <p>Leveraging high-specification hardware to ensure optimal and reliable blockchain network performance.</p>
                 <ul>
                     <li>Enterprise NVMe SSD Storage</li>
                     <li>High-frequency CPU Cores</li>
-                    <li>Koneksi internet Dedicated 1 Gbps</li>
+                    <li>1 Gbps Dedicated Network Connection</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Bagian Tambahan: Statistik Singkat -->
-        <h2 class="section-title" id="stats">Status Jaringan</h2>
+        <!-- Network Stats Section -->
+        <h2 class="section-title" id="stats">Network Status</h2>
         <div class="grid">
             <div class="card" style="text-align: center;">
                 <h3>Active Nodes</h3>
                 <p style="font-size: 32px; font-weight: bold; margin-top: 10px;">12+</p>
-                <p style="font-size: 14px; color: #4b5563;">Jaringan Blockchain didukung</p>
+                <p style="font-size: 14px; color: #4b5563;">Blockchain Networks Supported</p>
             </div>
             <div class="card" style="text-align: center;">
                 <h3>Total Staked</h3>
                 <p style="font-size: 32px; font-weight: bold; margin-top: 10px;">$500K+</p>
-                <p style="font-size: 14px; color: #4b5563;">Aset digital diamankan</p>
+                <p style="font-size: 14px; color: #4b5563;">Digital Assets Secured</p>
             </div>
             <div class="card" style="text-align: center;">
                 <h3>Community</h3>
                 <p style="font-size: 32px; font-weight: bold; margin-top: 10px;">1,500+</p>
-                <p style="font-size: 14px; color: #4b5563;">Delegator aktif</p>
+                <p style="font-size: 14px; color: #4b5563;">Active Delegators</p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer & Contacts -->
+    <footer id="footer">
         <p>&copy; 2026 Nort Network. All Rights Reserved.</p>
-        <p style="font-size: 12px; margin-top: 5px; color: #4b5563;">Dibuat dengan semangat desentralisasi.</p>
+        <p style="font-size: 12px; margin-top: 5px; color: #4b5563;">Built with the spirit of decentralization.</p>
+        
+        <!-- Social Media Links (Fill the '#' with your active links) -->
+        <div class="social-links">
+            <a href="#" target="_blank">🔗 GitHub</a>
+            <a href="#" target="_blank">💬 Discord</a>
+            <a href="#" target="_blank">✈️ Telegram</a>
+        </div>
     </footer>
 
 </body>
